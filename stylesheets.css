@@ -1,0 +1,497 @@
+/* effect 1 */
+
+.hover1{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.hover1:before, .hover1:after,
+.hover1__label:before, .hover1__label:after{
+  content: "";
+  position: absolute;
+  transition: transform .2s ease-out;
+}
+
+.hover1:before, .hover1:after{
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.hover1:before{
+  top: 0;
+  transform: translate3d(-105%, 0, 0);
+}
+
+.hover1:after{
+  bottom: 0;
+  transform: translate3d(105%, 0, 0);
+}
+
+.hover1__label:before,
+.hover1__label:after{
+  width: 2px;
+  height: 100%;
+  top: 0;
+}
+
+.hover1__label:before{
+  left: 0;
+  transform: translate3d(0%, -100%, 0);
+}
+
+.hover1__label:after{
+  right: 0;
+  transform: translate3d(0%, 100%, 0);
+}
+
+.hover1:hover:before, .hover1:focus:before,
+.hover1:hover:after, .hover1:focus:after,
+.hover1:hover .hover1__label:before, .hover1:focus .hover1__label:before,
+.hover1:hover .hover1__label:after, .hover1:focus .hover1__label:after{
+  transform: translate3d(0, 0, 0);
+}
+
+/* effect 2 */
+
+.hover2:hover .hover2__label,
+.hover2:focus .hover2__label{
+  transform: rotateY(360deg);
+}
+
+.hover2__label{
+  display: inline-block;
+  transform: rotateY(0);
+  transition: transform 0.4s, ease-out, color 0.4s, ease-out;
+}
+
+/* effect 3 */
+
+.hover3{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.hover3:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.2s ease-in;
+}
+
+.hover3:hover:after,
+.hover3:focus:after{
+  transform: translate3d(0, 0, 0);
+}
+
+/* effect 4 */
+
+.hover4:hover .hover4__label,
+.hover4:focus .hover4__label{
+  transform: rotateX(360deg);
+}
+
+.hover4__label{
+  display: inline-block;
+  transform: rotateX(0);
+  transform-origin: center bottom;
+  transition: transform 0.4s ease-out, color 0.4s ease-out;
+}
+
+/* effect 5 */
+
+.hover5:hover .hover5__label,
+.hover5:focus .hover5__label{
+  transform: rotateX(360deg);
+}
+
+.hover5__label{
+  display: inline-block;
+  transform: rotateX(0);
+  transition: transform 0.4s, ease-out, color 0.4s, ease-out;
+}
+
+/* effect 6 */
+
+.hover6:hover .hover6__label,
+.hover6:focus .hover6__label{
+  transform: rotateY(360deg);
+}
+
+.hover6__label{
+  display: inline-block;
+  transform: rotateY(0);
+  transform-origin: left center;
+  transition: transform 0.4s ease-out, color 0.4s ease-out;
+}
+
+/* effect 7 */
+
+.hover7{
+  display: inline-block;
+}
+
+.hover7:hover .hover7__label:after,
+.hover7:focus .hover7__label:after{
+  transform: translate3d(0, 0, 0);
+}
+
+.hover7__label{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.hover7__label:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transform: translate3d(-70%, 0, 0);
+  transition: transform 0.2s ease-in;
+}
+
+/* effect 8 */
+
+.hover8{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.hover8:after{
+  content: "";
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: transform .2s cubic-bezier(0.84, 0.41, 0, 1.2), opacity .2s ease-out;
+}
+
+.hover8:hover:after, .hover8:focus:after{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* effect 9 */
+
+.hover9{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.hover9:before, .hover9:after, .hover9__label:before, .hover9__label:after{
+  content: "";
+  position: absolute;
+  transition: transform .2s ease-out;
+}
+
+.hover9:before, .hover9:after{
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.hover9:before{
+  top: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.hover9:after{
+  bottom: 0;
+  transform: translate3d(100%, 0, 0);
+}
+
+.hover9__label:before, .hover9__label:after{
+  width: 2px;
+  height: 100%;
+  top: 0;
+}
+
+.hover9__label:before{
+  left: 0;
+  transform: translate3d(0, 100%, 0);
+}
+
+.hover9__label:after{
+  right: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+.hover9:hover:before, .hover9:hover:after,
+.hover9:hover .hover9__label:before, .hover9:hover .hover9__label:after,
+.hover9:focus:before, .hover9:focus:after,
+.hover9:focus .hover9__label:before, .hover9:focus .hover9__label:after{
+  transform: translate3d(0, 0, 0);
+}
+
+/* effect 10 */
+
+.hover10{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.hover10:before, .hover10:after, .hover10__label:before, .hover10__label:after{
+  content: "";
+  position: absolute;
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+
+.hover10:before, .hover10:after{
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.hover10:before{
+  top: 0;
+  transform: translate3d(-105%, 0, 0);
+  transition-delay: .6s;
+}
+
+.hover10:after{
+  bottom: 0;
+  transform: translate3d(105%, 0, 0);
+  transition-delay: .2s;
+}
+
+.hover10__label:before, .hover10__label:after{
+  width: 2px;
+  height: 100%;
+  top: 0;
+}
+
+.hover10__label:before{
+  left: 0;
+  transform: translate3d(0, 105%, 0);
+}
+
+.hover10__label:after{
+  right: 0;
+  transform: translate3d(0, -105%, 0);
+  transition-delay: .4s;
+}
+
+.hover10:hover:before, .hover10:hover:after,
+.hover10:hover .hover10__label:before, .hover10:hover .hover10__label:after,
+.hover10:focus:before, .hover10:focus:after,
+.hover10:focus .hover10__label:before, .hover10:focus .hover10__label:after{
+  transform: translate3d(0, 0, 0);
+}
+
+.hover10:hover:before, .hover10:focus:before{
+  transition-delay: 0s;
+}
+
+.hover10:hover:after, .hover10:focus:after{
+  transition-delay: .4s;
+}
+
+.hover10:hover .hover10__label:after, .hover10:focus .hover10__label:after{
+  transition-delay: .2s;
+}
+
+.hover10:hover .hover10__label:before, .hover10:focus .hover10__label:before{
+  transition-delay: .6s;
+}
+
+/*
+* demo
+*/
+
+@media screen and (min-width: 769px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px){
+
+  html{
+    font-size: 56%;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  font-family: "PT Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Open Sans", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
+  font-size: 1.6rem;
+  color: #222;
+
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+.main-container{
+  max-width: 1400px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section{
+  box-sizing: border-box;
+  padding: 6rem 2rem;
+  text-align: center;
+
+  border-bottom: 2px solid #f0f0f0;
+  border-right: 2px solid #f0f0f0;
+}
+
+.section:nth-child(2n+2){
+  background-color: #f0f3f6;
+}
+
+@media screen and (min-width: 769px){
+
+  .section{
+    width: 33.33333%;
+  }
+
+  .section:nth-child(3n+1){
+    border-left: 2px solid #f0f0f0;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .section{
+    width: 100%;
+    border-left: 2px solid #f0f0f0;
+  }
+}
+
+.title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+}
+
+.download{
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.download__button-label{
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background-color: #448AFF;
+  color: #fff;
+}
+
+.download__button:hover .download__button-label, .download__button:focus .download__button-label{
+  background-color: #512DA8;
+}
+
+.footer{
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  background-color: #222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__link:hover, .footer__link:focus{
+  color: #f0f0f0;
+}
+
+/*
+* menu
+*/
+
+.menu{
+  width: 100%;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 300px){
+
+  .menu{
+    flex-direction: column;
+  }
+}
+
+.menu__link{
+  font-weight: 700;
+  color: #448AFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu__link:hover,
+.menu__link:focus{
+  color: #512DA8;
+  outline: none;
+}
+
+.hover1:before, .hover1:after,
+.hover1__label:before, .hover1__label:after,
+.hover3:after, .hover7__label:after,
+.hover8:after, .hover9:before,
+.hover9:after, .hover9__label:before,
+.hover9__label:after, .hover10:before,
+.hover10:after, .hover10__label:before,
+.hover10__label:after{
+  background-color: #512DA8;
+}
+
+.hover1, .hover9, .hover10{
+  padding: .5rem 1.5rem;
+}
